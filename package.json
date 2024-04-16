@@ -1,0 +1,22 @@
+{
+  "name": "omf1",
+  "version": "1.0.0",
+  "description": "Oh my food projet 4 ",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch style.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valdev5/ohmyfoodv1.git"
+  },
+  "author": "Valentin Marty",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valdev5/ohmyfoodv1/issues"
+  },
+  "homepage": "https://github.com/valdev5/ohmyfoodv1#readme",
+  "dependencies": {
+    "sass": "^1.74.1"
+  }
+}
