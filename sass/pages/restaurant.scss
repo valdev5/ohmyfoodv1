@@ -34,11 +34,18 @@
     margin-right: auto;
     margin-left: auto;
     h2 {
+      text-align: center;
       font-family: "Shrikhand", "cursive";
       padding: 2rem 1rem;
-      @include mixins.heart-animated;
+      @include mixins.heart-animated2;
       border-radius: 2rem 2rem 0 0;
       background-color: colors.$lightergrey;
+      @media screen and (max-width: 1400px) {
+        @include mixins.heart-animated;
+        border-radius: 2rem 2rem 0 0;
+        background-color: colors.$lightergrey;
+        text-align: start;
+      }
     }
   }
 
@@ -70,7 +77,12 @@
     }
     .menus__category {
       overflow: hidden;
-    
+      width: 80%;
+      margin: 0 auto;
+      @media screen and (max-width: 1400px){
+        width: 100%;
+      }
+  }
   
       }
       
@@ -101,6 +113,7 @@
         .menu-item__description {
           padding: 1rem;
           overflow: hidden;
+
           h4,
           p {
             overflow: hidden;
@@ -140,7 +153,7 @@
           }
         }
       }
-    }
+    
   
 
   section.order {

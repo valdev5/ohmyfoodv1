@@ -374,6 +374,7 @@ footer h2 p {
   margin-left: auto;
 }
 #page-resto .resto__title h2 {
+  text-align: center;
   font-family: "Shrikhand", "cursive";
   padding: 2rem 1rem;
   position: relative;
@@ -393,7 +394,7 @@ footer h2 p {
   font-weight: 400;
   content: "\f004";
   font-size: 2rem;
-  right: 1rem;
+  right: 33rem;
   top: 50%;
   transform: translateY(-50%);
   color: inherit;
@@ -413,7 +414,7 @@ footer h2 p {
   font-weight: 900;
   content: "\f004";
   font-size: 2rem;
-  right: 1rem;
+  right: 33rem;
   top: 50%;
   transform: translateY(-50%);
   color: transparent;
@@ -426,6 +427,61 @@ footer h2 p {
 #page-resto .resto__title h2:hover::after {
   opacity: 1;
   transform: translateY(-50%) scale(1.1);
+}
+@media screen and (max-width: 1400px) {
+  #page-resto .resto__title h2 {
+    position: relative;
+    background-color: white;
+    border-radius: 0 0 1rem 1rem;
+    border-radius: 2rem 2rem 0 0;
+    background-color: #ebebeb;
+    text-align: start;
+  }
+  #page-resto .resto__title h2::before {
+    display: inline-block;
+    position: absolute;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\f004";
+    font-size: 2rem;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: inherit;
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 1;
+    transition: all 200ms ease-in-out;
+  }
+  #page-resto .resto__title h2::after {
+    display: inline-block;
+    position: absolute;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f004";
+    font-size: 2rem;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+    transition: all 200ms ease-in-out;
+    background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
+  }
+  #page-resto .resto__title h2:hover::after {
+    opacity: 1;
+    transform: translateY(-50%) scale(1.1);
+  }
 }
 #page-resto .resto-main {
   max-width: 1400px;
@@ -453,8 +509,16 @@ footer h2 p {
 }
 #page-resto .menus__category {
   overflow: hidden;
+  width: 80%;
+  margin: 0 auto;
 }
-#page-resto .menu-item {
+@media screen and (max-width: 1400px) {
+  #page-resto .menus__category {
+    width: 100%;
+  }
+}
+
+.menu-item {
   display: flex;
   background-color: white;
   border-radius: 1rem;
@@ -464,33 +528,33 @@ footer h2 p {
   animation: appear 1s;
   animation-fill-mode: both;
 }
-#page-resto .menu-item:nth-child(1) {
+.menu-item:nth-child(1) {
   animation-delay: 100ms;
 }
-#page-resto .menu-item:nth-child(2) {
+.menu-item:nth-child(2) {
   animation-delay: 200ms;
 }
-#page-resto .menu-item:nth-child(3) {
+.menu-item:nth-child(3) {
   animation-delay: 300ms;
 }
-#page-resto .menu-item .menu-item__price {
+.menu-item .menu-item__price {
   margin-left: auto;
   font-weight: 900;
   padding: 1rem;
   display: flex;
   align-items: flex-end;
 }
-#page-resto .menu-item .menu-item__description {
+.menu-item .menu-item__description {
   padding: 1rem;
   overflow: hidden;
 }
-#page-resto .menu-item .menu-item__description h4,
-#page-resto .menu-item .menu-item__description p {
+.menu-item .menu-item__description h4,
+.menu-item .menu-item__description p {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-#page-resto .menu-item .menu-item__check {
+.menu-item .menu-item__check {
   display: grid;
   place-items: center;
   flex-shrink: 0;
@@ -500,7 +564,7 @@ footer h2 p {
   width: 4rem;
   transition: margin-right 0.5s;
 }
-#page-resto .menu-item .menu-item__check i {
+.menu-item .menu-item__check i {
   font-size: 1.5rem;
   display: grid;
   place-items: center;
@@ -510,13 +574,13 @@ footer h2 p {
   border-radius: 1rem;
   color: #99e2d0;
 }
-#page-resto .menu-item:hover {
+.menu-item:hover {
   cursor: pointer;
 }
-#page-resto .menu-item:hover .menu-item__check {
+.menu-item:hover .menu-item__check {
   margin-right: 0;
 }
-#page-resto .menu-item:hover i {
+.menu-item:hover i {
   animation: quarterspin 0.5s ease-in-out;
 }
 @keyframes quarterspin {
