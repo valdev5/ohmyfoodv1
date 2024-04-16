@@ -168,6 +168,10 @@ header {
   color: #7e7e7e;
   font-size: 1.5rem;
 }
+.process li .fa-store:before {
+  content: "\f54e";
+  color: #9356dc;
+}
 
 #homepage .menus {
   background-color: #f6f6f6;
