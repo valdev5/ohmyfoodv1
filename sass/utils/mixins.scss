@@ -14,6 +14,7 @@
   transform: $transformation scale($zoom-level);
 }
 
+// style des font awesomes
 @mixin font-awesome($font-weight: 400) {
   display: inline-block;
   position: absolute;

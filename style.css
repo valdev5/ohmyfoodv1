@@ -44,7 +44,7 @@ header {
   gap: 1rem;
   background-color: #f3f3f3;
   text-align: center;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 .loc i {
   font-size: 1.5rem;
@@ -212,16 +212,16 @@ header {
   background-position: center;
 }
 #homepage .menus .card__image-1 {
-  background-image: url("../../restaurants/menu-1.jpg");
+  background-image: url("restaurants/menu-1.jpg");
 }
 #homepage .menus .card__image-2 {
-  background-image: url("../../restaurants/menu-2.jpg");
+  background-image: url("restaurants/menu-2.jpg");
 }
 #homepage .menus .card__image-3 {
-  background-image: url("../../restaurants/menu-3.jpg");
+  background-image: url("restaurants/menu-3.jpg");
 }
 #homepage .menus .card__image-4 {
-  background-image: url("../../restaurants/menu-4.jpg");
+  background-image: url("restaurants/menu-4.jpg");
 }
 #homepage .menus .card__description {
   position: relative;
