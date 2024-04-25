@@ -136,7 +136,7 @@ header {
   align-items: center;
   list-style-type: none;
   background-color: #f6f6f6;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 1.7rem;
   flex-grow: 1;
   border-radius: 1rem;
   box-shadow: 2px 1px 8px -3px #7e7e7e;
@@ -167,10 +167,6 @@ header {
   margin-right: 1rem;
   color: #7e7e7e;
   font-size: 1.5rem;
-}
-.process li .fa-store:before {
-  content: "\f54e";
-  color: #9356dc;
 }
 
 #homepage .menus {
