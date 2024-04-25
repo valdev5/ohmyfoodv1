@@ -128,6 +128,7 @@ header {
 @media (max-width: 1000px) {
   .process ol {
     flex-direction: column;
+    padding: 10px;
   }
 }
 .process li {
